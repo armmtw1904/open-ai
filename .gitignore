@@ -1,0 +1,53 @@
+# =========================================================================
+# .NET 10 Console Application Git Ignore Profile
+# =========================================================================
+
+# Build and compilation outputs
+[Bb]in/
+[Oo]bj/
+[Log]/
+
+# Native Ahead-Of-Time (Native AOT) compilation artifacts
+# (Highly relevant if publishing self-contained native binaries in .NET 10)
+*.exe
+*.dll
+*.pdb
+*.so
+*.dylib
+
+# Automated package restore dependencies
+artifacts/
+publish/
+**/packages/*
+!**/packages/build/
+
+# User-specific local configuration profiles
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Development app secrets (never commit actual local secrets to source control)
+secrets.json
+.microsoft.dotnet.secretmanager.list
+
+# =========================================================================
+# IDE & Editor Environments
+# =========================================================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Visual Studio 2022 / 2025
+.vs/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# OS generated system junk
+.DS_Store
+Thumbs.db
